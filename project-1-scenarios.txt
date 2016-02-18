@@ -1,0 +1,198 @@
+Scenarios (given these initial parameters, your simulation should return _exactly_ the same results):
+
+============================================================================
+Scenario 1: No chance of bags, a plane with 1 row, 1 seat and no passengers.
+============================================================================
+./airplane 0 1 1 0
+Airline simulation:
+   bag chance  : 1 in 0
+   rows        : 1
+   width       : 1
+   passengers  : 0
+
+Boarding order (* has carry-on):
+
+Passengers with bags: 0 out of 0 total.
+
+
+Seats
+Row Seat 1 
+  1 ------ 
+
+Overhead Bins
+Row Port Starboard
+  1 [  ] [  ]
+
+SUCCESS: all passengers boarded.
+
+=================================================================================
+Scenario 2: 1 in 1 chance of a bag, a plane with 1 row, 1 seat and no passengers.
+=================================================================================
+./airplane 1 1 1 1
+Airline simulation:
+   bag chance  : 1 in 1
+   rows        : 1
+   width       : 1
+   passengers  : 1
+
+Boarding order (* has carry-on):
+  1* 
+Passengers with bags: 1 out of 1 total.
+
+
+Seats
+Row Seat 1 
+  1      1 
+
+Overhead Bins
+Row Port Starboard
+  1    1 [  ]
+
+SUCCESS: all passengers boarded.
+
+====================================================================================
+Scenario 3: 1 in 1 chance of a bag, a plane with 10 rows, 2 seats and 20 passengers.
+====================================================================================
+./airplane 1 10 2 20
+Airline simulation:
+   bag chance  : 1 in 1
+   rows        : 10
+   width       : 2
+   passengers  : 20
+
+Boarding order (* has carry-on):
+ 17*  13*  11*  12*   2* 
+ 10*   8*  15*   1*  18* 
+ 14*   9*   3*   5*   7* 
+ 20*  16*   6*  19*   4* 
+
+Passengers with bags: 20 out of 20 total.
+
+
+Seats
+Row Seat 1 Seat 2 
+  1      1      2 
+  2      3      4 
+  3      5      6 
+  4      7      8 
+  5      9     10 
+  6     11     12 
+  7     13     14 
+  8     15     16 
+  9     17     18 
+ 10     19     20 
+
+Overhead Bins
+Row Port Starboard
+  1   17   13 
+  2   11   12 
+  3    2   10 
+  4    8   15 
+  5    1   18 
+  6   14    9 
+  7    3    5 
+  8    7   20 
+  9   16    6 
+ 10   19    4 
+
+SUCCESS: all passengers boarded.
+====================================================================================
+Scenario 3: 1 in 1 chance of a bag, a plane with 10 rows, 4 seats and 30 passengers.
+====================================================================================
+./airplane 1 10 4 30
+Airline simulation:
+   bag chance  : 1 in 1
+   rows        : 10
+   width       : 4
+   passengers  : 30
+
+Boarding order (* has carry-on):
+ 16*   9*  23*   3*  19* 
+ 26*   8*  10*  14*  18* 
+ 17*  13*   6*  21*   1* 
+ 20*  12*  30*  22*  24* 
+ 15*  25*  29*  28*  27* 
+  7*   4*   5*  11*   2* 
+
+Passengers with bags: 30 out of 30 total.
+
+ERROR: bin full:    row  3
+   seat 2
+Seats
+Row Seat 1 Seat 2 Seat 3 Seat 4 
+  1      1 ------      3 ------ 
+  2 ------      6 ------      8 
+  3      9     10 ------     12 
+  4     13     14 ------     16 
+  5     17     18     19     20 
+  6     21     22     23     24 
+  7 ------     26 ------ ------ 
+  8 ------     30 ------ ------ 
+  9 ------ ------ ------ ------ 
+ 10 ------ ------ ------ ------ 
+
+Overhead Bins
+Row Port Starboard
+  1   16    9 
+  2   23    3 
+  3   19   26 
+  4    8   10 
+  5   14   18 
+  6   17   13 
+  7    6   21 
+  8    1   20 
+  9   12   30 
+ 10   22   24 
+
+FAILURE to board all passengers!
+
+====================================================================================
+Scenario 3: 1 in 2 chance of a bag, a plane with 10 rows, 4 seats and 40 passengers.
+====================================================================================
+./airplane 2 10 4 40
+Airline simulation:
+   bag chance  : 1 in 2
+   rows        : 10
+   width       : 4
+   passengers  : 40
+
+Boarding order (* has carry-on):
+ 15*  13*  31    6   32* 
+ 33*  28*   3   36*  38* 
+ 14*   9*  11*   5   37  
+ 40   30   39*  23   24* 
+ 18    2    8*   4*   7  
+ 10   22   34   19*  21  
+ 20   27   26*  35*  25* 
+ 29    1*  12*  17   16  
+
+Passengers with bags: 20 out of 40 total.
+
+
+Seats
+Row Seat 1 Seat 2 Seat 3 Seat 4 
+  1      1      2      3      4 
+  2      5      6      7      8 
+  3      9     10     11     12 
+  4     13     14     15     16 
+  5     17     18     19     20 
+  6     21     22     23     24 
+  7     25     26     27     28 
+  8     29     30     31     32 
+  9     33     34     35     36 
+ 10     37     38     39     40 
+
+Overhead Bins
+Row Port Starboard
+  1   15   13 
+  2   32   33 
+  3   28   36 
+  4   38   14 
+  5    9   11 
+  6   39   24 
+  7    8    4 
+  8   19   26 
+  9   35   25 
+ 10    1   12 
+
+SUCCESS: all passengers boarded.
