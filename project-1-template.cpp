@@ -1,3 +1,33 @@
+/*
+CPSC 131, Spring 2016, Instructor Tim Finer, Project 1
+
+STUDENT NAME(S): TODO
+
+Your assignment is to fill in all the parts of this simulation to 
+make it work.  
+
+Step 1. Rename this file to project-1_lastname_firstname.cpp
+
+Step 2. This file should compile right from the start without any editing.
+
+Run this program without any giving it any arguments you should see:
+usage: ./a.out <BAG CHANCE> <ROWS> <WIDTH> <PASSENGER COUNT>
+
+Step 3. Start at the TODO below and work your way down.
+Mind the assertion failures, they mean that you did something wrong.
+
+Written in 2015 by Kevin Wortman (kwortman@fullerton.edu)
+Modified by Tim Finer (tifiner@fullerton.edu)
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty. You should have received a copy of the CC0 Public Domain
+Dedication along with this software. If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+*/
+
+
 #include <algorithm>
 #include <cassert>
 #include <cstdint>
