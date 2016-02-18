@@ -34,3 +34,15 @@ implemented correctly.
 This code was developed with the *clang++* compiler on the OS X operating system via command line
 (e.g. **clang++** --**std=c++14** **project-1-solution.cpp -o airplane**). However it is portable C++, and should
 work properly on Windows and Linux. The code is known to run on http://ideone.com as well.
+
+####WHAT TO DO
+You must fill in all the missing parts marked with TODO. You should be able to leave bottom part as-is
+(marked with a comment to that effect).
+
+  1. Read through the provided source file to make sure you understand how it is intended to work.
+    You may need to review the textbook or your notes.
+  2. Write the names of all your group members 1 in the comments at the top of your file.
+  3. Fill in the missing data member declarations.
+  4. Fill in all the missing member function definitions for the airline module.
+  5. Run the program to ensure that your function definitions are complete and correct. You will
+    probably need to spend some time debugging.
