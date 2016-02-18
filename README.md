@@ -35,7 +35,7 @@ This code was developed with the *clang++* compiler on the OS X operating system
 (e.g. **clang++** --**std=c++14** **project-1-solution.cpp -o airplane**). However it is portable C++, and should
 work properly on Windows and Linux. The code is known to run on http://ideone.com as well.
 
-####WHAT TO DO
+#####WHAT TO DO
 You must fill in all the missing parts marked with TODO. You should be able to leave bottom part as-is
 (marked with a comment to that effect).
 
