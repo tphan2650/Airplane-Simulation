@@ -64,7 +64,6 @@ public:
     // stored in an overhead bin.
     Bag(const Passenger* owner) {
         assert(owner);
-        _stowed = false;
         _owner = owner;
         _row = -1;
         _side = Side::NotStowed;
@@ -77,7 +76,7 @@ public:
     
     // Return true if the bag is stowed.
     bool is_stowed() const {
-        if (_stowed){
+        if (!NotStowed){
             return true;
         }
         else{
@@ -101,7 +100,6 @@ public:
     
 private:
     const Passenger* _owner;
-    bool _stowed;
     int _row;
     Side _side;
     
