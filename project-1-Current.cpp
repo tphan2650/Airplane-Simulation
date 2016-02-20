@@ -168,6 +168,7 @@ public:
         for(int i=0;i<MAX_ROWS;i++){
             for(int j=0;j<MAX_WIDTH;j++){
                 _seats[i][j] = 0;
+                _OverheadBins[i][j] = 0;
             }
         }
         //_seats = {0};
